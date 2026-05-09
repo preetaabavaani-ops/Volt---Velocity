@@ -1,0 +1,202 @@
+export default function VoltVelocityWebsite() {
+  return (
+    <div className="min-h-screen bg-[#0a0000] text-white font-sans">
+      {/* NAVBAR */}
+      <nav className="flex items-center justify-between px-8 py-6 border-b border-[#4C0507] sticky top-0 bg-[#0a0000]/90 backdrop-blur-md z-50">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-[#D71515] flex items-center justify-center text-xl font-bold shadow-lg shadow-red-900">
+            ⚡
+          </div>
+          <h1 className="text-3xl font-black tracking-wide text-[#D71515]">
+            Volt Velocity
+          </h1>
+        </div>
+
+        <div className="hidden md:flex gap-8 text-sm uppercase tracking-widest text-gray-300">
+          <a href="#home" className="hover:text-[#D71515] transition">Home</a>
+          <a href="#about" className="hover:text-[#D71515] transition">About</a>
+          <a href="#energy" className="hover:text-[#D71515] transition">Energy</a>
+          <a href="#stats" className="hover:text-[#D71515] transition">Stats</a>
+          <a href="#signup" className="hover:text-[#D71515] transition">Join</a>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section
+        id="home"
+        className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gradient-to-b from-[#30080B] via-[#4C0507] to-black"
+      >
+        <div className="mb-8 text-8xl drop-shadow-[0_0_25px_rgba(215,21,21,0.7)]">
+          ⚡
+        </div>
+
+        <h1 className="text-6xl md:text-8xl font-black uppercase tracking-wider text-[#D71515] leading-none">
+          Volt Velocity
+        </h1>
+
+        <p className="mt-6 text-xl md:text-2xl text-[#d8b0b0] max-w-3xl leading-relaxed">
+          A luxury-performance energy drink built for speed, confidence,
+          focus, and unstoppable motion.
+        </p>
+
+        <button className="mt-10 bg-[#D71515] hover:bg-[#9f1010] transition px-10 py-5 rounded-full text-lg font-bold shadow-2xl shadow-red-900 hover:scale-105">
+          Join The Rush
+        </button>
+      </section>
+
+      {/* ABOUT PAGE */}
+      <section
+        id="about"
+        className="min-h-screen px-8 py-24 bg-[#140102] flex flex-col justify-center"
+      >
+        <h2 className="text-5xl font-black text-[#D71515] mb-10 uppercase">
+          About Volt Velocity
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-10">
+          <div className="bg-[#30080B] p-10 rounded-3xl border border-[#4C0507] shadow-2xl">
+            <h3 className="text-3xl font-bold mb-4 text-[#D71515]">
+              The Vision
+            </h3>
+            <p className="text-gray-300 leading-8 text-lg">
+              Volt Velocity was created to reinvent the energy drink industry
+              with smoother energy, bold flavor, premium branding, and a
+              fearless luxury identity.
+            </p>
+          </div>
+
+          <div className="bg-[#30080B] p-10 rounded-3xl border border-[#4C0507] shadow-2xl">
+            <h3 className="text-3xl font-bold mb-4 text-[#D71515]">
+              Built Different
+            </h3>
+            <p className="text-gray-300 leading-8 text-lg">
+              Designed for students, athletes, creators, gamers, and ambitious
+              people who want performance without harsh crashes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ENERGY FEATURES */}
+      <section
+        id="energy"
+        className="min-h-screen px-8 py-24 bg-gradient-to-b from-black to-[#30080B]"
+      >
+        <h2 className="text-5xl font-black text-center text-[#D71515] uppercase mb-20">
+          Why Volt Velocity?
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-[#140102] rounded-3xl p-10 border border-[#4C0507] hover:scale-105 transition">
+            <div className="text-5xl mb-5">⚡</div>
+            <h3 className="text-2xl font-bold text-[#D71515] mb-4">
+              Smooth Energy
+            </h3>
+            <p className="text-gray-300 leading-7">
+              Long-lasting energy support without uncomfortable crashes.
+            </p>
+          </div>
+
+          <div className="bg-[#140102] rounded-3xl p-10 border border-[#4C0507] hover:scale-105 transition">
+            <div className="text-5xl mb-5">🔥</div>
+            <h3 className="text-2xl font-bold text-[#D71515] mb-4">
+              Luxury Identity
+            </h3>
+            <p className="text-gray-300 leading-7">
+              A high-fashion energy brand inspired by confidence and speed.
+            </p>
+          </div>
+
+          <div className="bg-[#140102] rounded-3xl p-10 border border-[#4C0507] hover:scale-105 transition">
+            <div className="text-5xl mb-5">🏎️</div>
+            <h3 className="text-2xl font-bold text-[#D71515] mb-4">
+              Fast Lifestyle
+            </h3>
+            <p className="text-gray-300 leading-7">
+              Built for ambition, nightlife, gaming, sports, and creators.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* PIE CHART SECTION */}
+      <section
+        id="stats"
+        className="min-h-screen px-8 py-24 bg-[#140102] flex flex-col items-center justify-center"
+      >
+        <h2 className="text-5xl font-black text-[#D71515] uppercase mb-16 text-center">
+          Volt Velocity Formula
+        </h2>
+
+        <div className="flex flex-col lg:flex-row items-center gap-16">
+          {/* Pie Chart */}
+          <div className="relative w-80 h-80 rounded-full bg-[conic-gradient(#D71515_0%_40%,#4C0507_40%_70%,#30080B_70%_100%)] shadow-[0_0_40px_rgba(215,21,21,0.5)] border-8 border-[#140102]">
+            <div className="absolute inset-20 bg-[#140102] rounded-full flex items-center justify-center text-center p-4">
+              <span className="text-xl font-bold text-[#D71515]">
+                Balanced Energy
+              </span>
+            </div>
+          </div>
+
+          {/* Chart Labels */}
+          <div className="space-y-6 text-lg">
+            <div className="flex items-center gap-4">
+              <div className="w-6 h-6 bg-[#D71515] rounded"></div>
+              <p>Smooth Energy Boost — 40%</p>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <div className="w-6 h-6 bg-[#4C0507] rounded"></div>
+              <p>Focus & Performance — 30%</p>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <div className="w-6 h-6 bg-[#30080B] rounded"></div>
+              <p>Flavor & Experience — 30%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SIGNUP PAGE */}
+      <section
+        id="signup"
+        className="min-h-screen flex flex-col justify-center items-center px-6 bg-gradient-to-b from-[#30080B] to-black"
+      >
+        <h2 className="text-5xl font-black text-[#D71515] uppercase mb-8 text-center">
+          Join Volt Velocity
+        </h2>
+
+        <p className="text-gray-300 text-lg text-center max-w-2xl mb-10 leading-8">
+          Sign up to get updates, exclusive launches, and early access to Volt
+          Velocity.
+        </p>
+
+        <div className="w-full max-w-2xl bg-[#140102] border border-[#4C0507] rounded-3xl p-10 shadow-2xl">
+          <div className="grid gap-6">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="bg-[#30080B] border border-[#4C0507] rounded-xl px-5 py-4 outline-none text-white"
+            />
+
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="bg-[#30080B] border border-[#4C0507] rounded-xl px-5 py-4 outline-none text-white"
+            />
+
+            <button className="bg-[#D71515] hover:bg-[#9f1010] transition py-4 rounded-xl text-lg font-bold shadow-lg shadow-red-900">
+              Enter The Velocity
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="py-8 border-t border-[#4C0507] text-center text-gray-500 bg-black">
+        © 2026 Volt Velocity — Luxury Energy Reimagined
+      </footer>
+    </div>
+  );
+}
